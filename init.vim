@@ -17,12 +17,10 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
 Plug 'ciaranm/securemodelines'
 " Plug 'editorconfig/editorconfig-vim'		" Assume an editor config is enforced
 Plug 'tpope/vim-fugitive'
-" Plug 'sheerun/vim-polyglot'			" I don't need this and it is buggy
+Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdcommenter'
-" Plug 'justinmk/vim-sneak'			" Need to remember its syntax
 Plug 'junegunn/vim-easy-align', {'for': ['tex', 'latex']}  " Make writing easy with align
-" Plug 'tweekmonster/startuptime.vim'
-" Plug 'tricktux/pomodoro.vim'
+" Plug 'sheerun/vim-polyglot'			" I don't need this and it is buggy
 
 "█▓▒░ GUI enhancements
 " --------------------
@@ -33,15 +31,11 @@ Plug 'bounceme/poppy.vim'			" rainbow parens
 Plug 'ntpeters/vim-better-whitespace'
 " Plug 'romainl/vim-cool'				" disables search highlighting when you are done
 " Plug 'RRethy/vim-illuminate'			" highlighting other uses of the current word
-" Plug 'vim-airline/vim-airline'			" better status line
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 " Plug 'lilydjwg/colorizer'			" colorize text in the form
 " Plug 'mbbill/undotree'
 Plug 'rhysd/committia.vim'			" better git commit layout
-" Plug 'andymass/vim-matchup', { 'for': ['tex', 'latex'] }
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'godlygeek/tabular', { 'for': ['tex', 'latex'] }
 Plug 'ryanoasis/vim-devicons'
 
 "█▓▒░ Additional func..
@@ -294,7 +288,6 @@ source $HOME/.config/nvim/lib/syntax.vim
 " ===========================================================================
 "   Personal programming setup
 " ===========================================================================
-" source $HOME/.config/nvim/lib/airline.vim
 source $HOME/.config/nvim/lib/lightline.vim
 source $HOME/.config/nvim/lib/coc.vim
 
