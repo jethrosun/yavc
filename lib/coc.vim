@@ -200,6 +200,8 @@ nnoremap <silent> <space>i  :call CocActionAsync('codeAction', '', 'Implement mi
 " Show actions available at this location
 nnoremap <silent> <space>a  :CocAction<cr>
 
+" Implement methods for trait
+nnoremap <silent> <space>i  :call CocActionAsync('codeAction', '', 'Implement missing members')<cr>
 "
 " Coc snippet
 "

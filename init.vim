@@ -77,7 +77,7 @@ Plug 'alvan/vim-closetag'
 
 "█▓▒░ Rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'arzg/vim-rust-syntax-ext', { 'for': 'rust' } " broken?
+" Plug 'arzg/vim-rust-syntax-ext', { 'for': 'rust' } " broken?
 
 "█▓▒░ C++ and Clang
 " Plug 'octol/vim-cpp-enhanced-highlight', {'for': ['cpp'] }
@@ -296,7 +296,6 @@ source $HOME/.config/nvim/lib/syntax.vim
 " ===========================================================================
 " source $HOME/.config/nvim/lib/airline.vim
 source $HOME/.config/nvim/lib/lightline.vim
-" source $HOME/.config/nvim/lib/pomodoro.vim
 source $HOME/.config/nvim/lib/coc.vim
 
 " echodoc
