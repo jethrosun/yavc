@@ -264,15 +264,15 @@ hi Comment cterm=italic gui=italic
 " hi Normal guibg=NONE
 
 " Colors: Spacemacs
-" colorscheme spacemacs-theme
+colorscheme spacemacs-theme
 
 " Colors: Base16
 let base16colorspace=256
 let g:base16_shell_path="$HOME/dev/others/base16/shell/scripts/"
 " colorscheme base16-atelier-dune
-colorscheme base16-gruvbox-dark-hard
-call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
-call Base16hi("CocHintSign", g:base16_gui03, "", g:base16_cterm03, "", "", "")
+" colorscheme base16-gruvbox-dark-hard
+" call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
+" call Base16hi("CocHintSign", g:base16_gui03, "", g:base16_cterm03, "", "", "")
 
 " the configuration options should be placed before `colorscheme forest-night`
 " let g:forest_night_enable_italic = 1
