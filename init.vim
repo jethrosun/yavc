@@ -52,7 +52,6 @@ Plug 'junegunn/fzf.vim'
 " -----------------------------
 " Coc for completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'jiangmiao/auto-pairs' | Plug 'dense-analysis/ale'			" and ALE for linting
 Plug 'Shougo/echodoc.vim'			" Showing function signature and inline doc.
 
 "█▓▒░ VIM editing enhancements
@@ -274,11 +273,6 @@ let g:base16_shell_path="$HOME/dev/others/base16/shell/scripts/"
 " colorscheme base16-gruvbox-dark-hard
 " call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
 " call Base16hi("CocHintSign", g:base16_gui03, "", g:base16_cterm03, "", "", "")
-
-" the configuration options should be placed before `colorscheme forest-night`
-" let g:forest_night_enable_italic = 1
-" let g:forest_night_disable_italic_comment = 1
-" colorscheme forest-night
 
 " Editing setup
 source $HOME/.config/nvim/lib/editing.vim
