@@ -104,7 +104,7 @@ command! WQ wq
 nnoremap <C-i> C
 "inoremap <C-i> C
 "vnoremap <C-i> C
-nnoremap <leader>i C
+" nnoremap <leader>i C
 "inoremap <leader>i C
 "vnoremap <leader>i C
 
@@ -435,9 +435,6 @@ let g:NERDCustomDelimiters = {
 			\ 'python': {'left': '#'},
 			\ 'rust': {'left': '//'},
 			\ }
-" Nerd commenter keybindings
-"map <leader>\ <leader>c<Space>
-map <leader>cc <plug>NERDComToggleComment
 
 " Undo tree
 nnoremap <leader>u :UndotreeToggle<cr>

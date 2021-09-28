@@ -94,15 +94,14 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> <leader>. <Plug>(coc-definition)
-nmap <silent> <leader>y <Plug>(coc-type-definition)
-nmap <silent> <leader>i <Plug>(coc-implementation)
-nmap <silent> <leader>r <Plug>(coc-references)
+" nmap <silent> <leader>. <Plug>(coc-definition)
+" nmap <silent> <leader>y <Plug>(coc-type-definition)
+" nmap <silent> <leader>i <Plug>(coc-implementation)
+" nmap <silent> <leader>r <Plug>(coc-references)
 nmap <silent> <leader>l <Plug>(coc-diagnostic-info)
 nmap <silent> <leader>o  <C-O>
 nmap <silent> <C-g> :close<cr>
 
-" GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -193,15 +192,11 @@ nnoremap <silent> <leader>]  :<C-u>CocList -I symbols<cr>
 " nnoremap <silent> <leader>k  :<C-u>CocPrev<CR>
 " nnoremap <silent> <leader>ok  :<C-u>CocPrev<CR>
 
-
-" Implement methods for trait
-nnoremap <silent> <space>i  :call CocActionAsync('codeAction', '', 'Implement missing members')<cr>
-
 " Show actions available at this location
-nnoremap <silent> <space>a  :CocAction<cr>
+nnoremap <silent> <leader>a  :CocAction<cr>
 
 " Implement methods for trait
-nnoremap <silent> <space>i  :call CocActionAsync('codeAction', '', 'Implement missing members')<cr>
+nnoremap <silent> <leader>i  :call CocActionAsync('codeAction', '', 'Implement missing members')<cr>
 "
 " Coc snippet
 "
@@ -237,6 +232,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 let g:coc_snippet_next = '<tab>'
 
 " Additional filetype for coc pairs
+autocmd FileType rs let b:coc_pairs = [["<", ">"]]
 autocmd FileType tex let b:coc_pairs = [["$", "$"]]
 autocmd FileType tex let b:coc_pairs_disabled = ["`", "'","<"]
 " autocmd FileType tex setlocal spell spelllang=en_us
