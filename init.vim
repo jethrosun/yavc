@@ -243,11 +243,12 @@ set showcmd                                 " Show (partial) command in status l
 set mouse=a                                 " Enable mouse usage (all modes) in terminals
 set shortmess+=c                            " don't give |ins-completion-menu| messages.
 
+" Make it so there are always ten lines below my cursor
+set scrolloff=10
+
 " Show those damn hidden characters
 " Verbose: set listchars=nbsp:¬,eol:¶,extends:»,precedes:«,trail:•
 set listchars=nbsp:¬,extends:»,precedes:«,trail:•
-
-let g:sneak#s_next = 1
 
 " better whitespace
 " red #FF0000, coral #FF7F50, tomato #FF6347, orangered #FF4500, orange

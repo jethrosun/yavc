@@ -18,7 +18,6 @@
 	"rust-analyzer.checkOnSave.enable": true,
 	"rust-analyzer.checkOnSave.command": "clippy",
 	"rust-analyzer.cargo.allFeatures": true,
-	"rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer",
 
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Enabled": false,
