@@ -73,7 +73,7 @@ augroup filetypedetect
 	au BufRead,BufNewFile jbuild setlocal ft=scheme
 	au BufRead,BufNewFile dune setlocal ft=scheme
 	" }}}
-	au FileType python match BadWhitespace /\s\+$/
+	" au FileType python match BadWhitespace /\s\+$/
 
 	" The usual 80ish characters tends to be too short for go programs.
 	au FileType go setlocal tw=100
