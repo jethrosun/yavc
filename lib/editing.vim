@@ -339,7 +339,7 @@ let g:Illuminate_delay = 1500
 " let g:vim_search_pulse_duration = 250
 
 " poppy
-au! cursormoved * call PoppyInit()
+" au! cursormoved * call PoppyInit()
 
 " notational-fzf-vim
 if !empty(glob("~/notes"))
