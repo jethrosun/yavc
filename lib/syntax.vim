@@ -63,7 +63,7 @@ let g:vim_markdown_frontmatter = 1
 " https://quinoa42.github.io/en/oceanus/neovim-python/
 if has("nvim")
 	let g:python_host_prog = $HOME . "/.pyenv/versions/neovim2/bin/python"
-	let g:python3_host_prog = $HOME . "/.pyenv/versions/py3/bin/python"
+	let g:python3_host_prog = $HOME . "/.pyenv/versions/neovim3/bin/python"
 endif
 
 " C++

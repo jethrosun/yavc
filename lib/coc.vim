@@ -17,6 +17,7 @@ call coc#add_extension('coc-rust-analyzer')  " rust
 call coc#add_extension('coc-clangd')  " cpp
 " call coc#add_extension('coc-texlab')  " latex
 call coc#add_extension('coc-ltex')  " latex
+call coc#add_extension('coc-spell-checker')
 " call coc#add_extension('coc-vimtex')
 " call coc#add_extension('coc-gocode')
 " call coc#add_extension('coc-vimlsp')
@@ -240,3 +241,9 @@ autocmd FileType tex let b:coc_pairs_disabled = ["`", "'","<"]
 autocmd FileType html let b:coc_pairs_disabled = ['<']
 autocmd FileType markdown let b:coc_pairs_disabled = ['`']
 autocmd FileType markdown let b:coc_pairs = [["$", "$"]]
+
+" spell check
+" <leader>aap for current paragraph
+" <leader>aw for current word
+vmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <leader>a <Plug>(coc-codeaction-selected)
