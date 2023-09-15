@@ -58,6 +58,15 @@ Plug 'Shougo/echodoc.vim'			" Showing function signature and inline doc.
 " ----------------------------
 Plug 'inside/vim-search-pulse'
 
+" Add maktaba and codefmt to the runtimepath.
+" ----------------------------
+" (The latter must be installed before it can be used.)
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" `:help :Glaive` for usage.
+Plug 'google/vim-glaive'
+
 "█▓▒░ Syntactic language support
 " ------------------------------
 Plug 'stephpy/vim-yaml', { 'for': 'yaml' }
@@ -90,6 +99,12 @@ if !isdirectory(expand("$HOME/dev/others/base16"))
 	Plug 'chriskempson/base16-vim'
 endif
 call plug#end()
+
+"█▓▒░ the glaive#Install() should go after
+call glaive#Install()
+" Optional: Enable codefmt's default mappings on the <Leader>= prefix.
+"Glaive codefmt plugin[mappings]
+"Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
 
 
 "█▓▒░ Make pyenv and neovim work nice together
@@ -131,10 +146,6 @@ endif
 if (match($TERM, "xterm") != -1)
 	set termguicolors                         " for the vagrant linux box
 endif
-
-set printfont=:h14
-set printencoding=utf-8
-set printoptions=paper:letter
 
 " Always draw sign column. Prevent buffer moving when adding/deleting sign.
 set signcolumn=yes

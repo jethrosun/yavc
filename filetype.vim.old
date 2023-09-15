@@ -78,7 +78,6 @@ augroup filetypedetect
 	" The usual 80ish characters tends to be too short for go programs.
 	au FileType go setlocal tw=100
 
-
 	" Git commit message
 	au Filetype gitcommit setlocal spell tw=72 colorcolumn=73
 
