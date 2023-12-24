@@ -127,7 +127,8 @@ opt.ttyfast = true
 opt.lazyredraw = true -- don't update the display while executing macros<Paste>
 opt.synmaxcol = 500
 opt.laststatus = 2 --  always have a statusline
--- opt.relativenumber = true -- Relative line numbers
+-- vim.wo.relativenumber = true
+opt.relativenumber = true -- Relative line numbers
 opt.number = true -- Also show current absolute line
 opt.diffopt = opt.diffopt + "iwhite" -- No whitespace in vimdiff
 -- Make diffing better: https://vimways.org/2018/the-power-of-diff/

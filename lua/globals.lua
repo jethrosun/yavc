@@ -1,6 +1,7 @@
 local g = vim.g
 
-vim.cmd "colorscheme codedark"
+vim.cmd "colorscheme kanagawa"
+-- vim.cmd "colorscheme codedark"
 
 g.mapleader = " "
 g.maplocalleader = ","
@@ -62,9 +63,3 @@ g.vimtex_view_method = 'zathura'
 g.vimtex_quickfix_mode = 0
 vim.cmd "set conceallevel=1"
 g.tex_conceal = 'abdmg'
-
--- mini map
--- g.minimap_width = 10
--- g.minimap_auto_start = 1
--- g.minimap_auto_start_win_enter = 1
--- g.minimap_close_filetypes = {'dashboard', 'gitcommit'}
