@@ -1,6 +1,7 @@
 local g = vim.g
 
-vim.cmd "colorscheme kanagawa"
+vim.cmd "colorscheme gruvbox-material"
+-- vim.cmd "colorscheme kanagawa"
 -- vim.cmd "colorscheme codedark"
 
 g.mapleader = " "

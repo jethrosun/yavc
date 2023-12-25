@@ -67,6 +67,10 @@ local servers = {
   },
   -- C, C++
   clangd = {
+    filetypes = { "c", "cpp", "cc" },
+    flags = {
+      debounce_text_changes = 500,
+    },
     on_attach = function(client, bufnr)
       ih.on_attach(client, bufnr)
     end,
@@ -90,11 +94,25 @@ local servers = {
   taplo = {},
   -- Golang
   gopls = {},
+  ltex = {
+    on_attach = function(client, bufnr)
+      ih.on_attach(client, bufnr)
+    end,
+    cmd = { "ltex-ls" },
+    filetypes = { "text", "plaintex", "tex", "markdown" },
+    settings = {
+      ltex = {
+        language = "en"
+      },
+    },
+    flags = { debounce_text_changes = 300 },
+  },
 }
 local servers_keys = {}
 for k, _ in pairs(servers) do
   table.insert(servers_keys, k)
 end
+
 require('mason-lspconfig').setup { ensure_installed = servers_keys }
 local lsp = require('lspconfig')
 local coq_wrap = require('coq').lsp_ensure_capabilities
