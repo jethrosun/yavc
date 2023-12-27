@@ -1,11 +1,8 @@
 local g = vim.g
 
-vim.cmd "colorscheme gruvbox-material"
--- vim.cmd "colorscheme kanagawa"
+-- vim.cmd "colorscheme gruvbox-material"
+vim.cmd "colorscheme kanagawa"
 -- vim.cmd "colorscheme codedark"
-
-g.mapleader = " "
-g.maplocalleader = ","
 
 -- Ignore for indent levels
 g.indent_blankline_filetype_exclude = { "help", "packer", "dashboard", "nvim-tree" }
