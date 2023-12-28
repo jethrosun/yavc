@@ -65,6 +65,7 @@ require('lazy').setup({
     { 'ntpeters/vim-better-whitespace' },
     { 'lukas-reineke/indent-blankline.nvim' },
     { 'HiPhish/rainbow-delimiters.nvim' },
+    -- { 'p00f/nvim-ts-rainbow' },
     {
         'lewis6991/gitsigns.nvim',
         event = { 'BufReadPost', 'BufNewFile' },
@@ -114,7 +115,7 @@ require('lazy').setup({
 
     -- LSP utils
     { 'nvim-lua/lsp_extensions.nvim' }, -- info and inlay hints
-    { 'ray-x/lsp_signature.nvim' },     -- function signatures
+    { 'ray-x/lsp_signature.nvim' },   -- function signatures
     {
         'j-hui/fidget.nvim',            -- lsp status
         event = "LspAttach",
