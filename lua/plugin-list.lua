@@ -169,9 +169,9 @@ require('lazy').setup({
     -- { 'kristijanhusak/vim-dadbod-ui' },
 
     -- writing
-    -- { 'junegunn/goyo.vim' },      -- Goyo, Goyo!
-    -- { 'junegunn/limelight.vim' }, -- Limelight, Limelight!
-    -- { 'rhysd/vim-grammarous' },
+    { 'junegunn/goyo.vim' },      -- Goyo, Goyo!
+    { 'junegunn/limelight.vim' }, -- Limelight, Limelight!
+    { 'rhysd/vim-grammarous' },
 
     -- LaTeX
     -- https://www.reddit.com/r/neovim/comments/idthcb/vimtex_vs_texlab/

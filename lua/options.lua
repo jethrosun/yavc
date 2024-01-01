@@ -12,6 +12,15 @@ filetype plugin indent on
 syntax on
 set nowrap
 set nofoldenable
+
+if !has('gui_running')
+set t_Co=256
+endif
+if (match($TERM, "-256color") != -1) && (match($TERM, "screen-256color") == -1)
+  " screen does not (yet) support truecolor
+  set termguicolors
+endif
+
 ]])
 
 -- highlight yanked text for 200ms using the "Visual" highlight group
@@ -31,7 +40,7 @@ opt.splitright = true -- Split vertical windows right to the current windows
 opt.splitbelow = true -- Split horizontal windows below to the current windows
 
 -- I only use VIM from the terminals
-opt.termguicolors = true -- screen does not (yet) support truecolor
+-- opt.termguicolors = true -- screen does not (yet) support truecolor
 
 opt.cul = true
 opt.mouse = "a" -- Enable mouse usage (all modes) in terminals
@@ -159,7 +168,7 @@ opt.guicursor = "n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r
 opt.inccommand = "nosplit"
 
 -- noremap <C-q> :confirm qall<CR>
-if not vim.fn.has('gui_running') then vim.opt.t_Co = 256 end
+-- if not vim.fn.has('gui_running') then vim.opt.t_Co = 256 end
 
 -- spell setting
 vim.cmd([[
@@ -173,6 +182,10 @@ set spellsuggest=best,9
 hi clear SpellBad
 " hi SpellBad ctermfg=000 guifg=#000
 hi SpellBad cterm=underline gui=undercurl
+
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
 ]])
 
 local disabled_built_ins = {
