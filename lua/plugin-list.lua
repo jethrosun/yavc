@@ -172,6 +172,8 @@ require('lazy').setup({
     { 'junegunn/goyo.vim' },      -- Goyo, Goyo!
     { 'junegunn/limelight.vim' }, -- Limelight, Limelight!
     { 'rhysd/vim-grammarous' },
+    -- https://github.com/airbornelamb/vim-academic
+    { 'airbornelamb/vim-academic' },
 
     -- LaTeX
     -- https://www.reddit.com/r/neovim/comments/idthcb/vimtex_vs_texlab/

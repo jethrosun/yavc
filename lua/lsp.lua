@@ -79,6 +79,9 @@ local servers = {
   dockerls = {},
   -- Python
   pyright = {
+    on_attach = function(client, bufnr)
+      ih.on_attach(client, bufnr)
+    end,
     settings = {
       pyright = {
         disableLanguageServices = true,
