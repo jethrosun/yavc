@@ -55,6 +55,11 @@ brew install --cask temurin
 - fix the pyenv issue: sometime i have it configured and installed, but
   sometimes not
 - fix the fold thing: ufo is not working rn
+- [checkwriting](https://github.com/devd/Academic-Writing-Check): I need a
+  better way to use it
+
+https://github.com/GregoryAshton/dotfiles/blob/master/vim/vimrc
+https://github.com/syclops/dotfiles/blob/master/vim/post.vimrc
 
 ## ChangeList
 - Nov 19, 2020: [config nvim with coq and packer using lua](https://github.com/jethrosun/yavc/commit/46628fb7cd72f02c50c9faaf36bf212f8b6d8c85)

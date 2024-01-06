@@ -52,12 +52,12 @@ require('lazy').setup({
     { 'tomasiser/vim-code-dark' },
     { 'rebelot/kanagawa.nvim' },
     { 'sainnhe/gruvbox-material' },
-{
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-},
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
 
     -- GUI enhancements
     { 'jaxbot/semantic-highlight.vim' }, -- different color for every variable
@@ -115,7 +115,7 @@ require('lazy').setup({
 
     -- LSP utils
     { 'nvim-lua/lsp_extensions.nvim' }, -- info and inlay hints
-    { 'ray-x/lsp_signature.nvim' },   -- function signatures
+    { 'ray-x/lsp_signature.nvim' },     -- function signatures
     {
         'j-hui/fidget.nvim',            -- lsp status
         event = "LspAttach",
@@ -131,7 +131,7 @@ require('lazy').setup({
                 },
             },
         },
-        config = function() require('fidget').setup {} end
+        -- config = function() require('fidget').setup {} end
     },
     { 'SmiteshP/nvim-navic' }, -- display function name etc
 
@@ -145,22 +145,22 @@ require('lazy').setup({
     { 'folke/lua-dev.nvim' },
 
     -- Language support
-    { 'stephpy/vim-yaml',                    ft = 'yaml' },
-    { 'cespare/vim-toml',                    ft = 'toml' },
-    { 'dag/vim-fish',                        ft = 'fish' },
-    { 'nvim-orgmode/orgmode',                config = function() require('orgmode').setup {} end },
-    { 'plasticboy/vim-markdown',             ft = 'markdown' },
-    { 'mzlogin/vim-markdown-toc',            ft = 'markdown' },
+    { 'stephpy/vim-yaml',                 ft = 'yaml' },
+    { 'cespare/vim-toml',                 ft = 'toml' },
+    { 'dag/vim-fish',                     ft = 'fish' },
+    { 'nvim-orgmode/orgmode',             config = function() require('orgmode').setup {} end },
+    { 'plasticboy/vim-markdown',          ft = 'markdown' },
+    { 'mzlogin/vim-markdown-toc',         ft = 'markdown' },
     { 'alvan/vim-closetag' },
 
     -- Rust
     { 'simrat39/rust-tools.nvim' },
     -- C++ and Clang
-    { 'octol/vim-cpp-enhanced-highlight',    ft = { 'c', 'cpp' } },
-    { 'drmikehenry/vim-headerguard',         ft = { 'c', 'cpp' } },
-    { 'bfrg/vim-cpp-modern',                 ft = { 'c', 'cpp' } },
-    { 'arakashic/chromatica.nvim',           ft = { 'c', 'cpp' } },
-    { 'rhysd/vim-clang-format',              ft = { 'c', 'cpp' } },
+    { 'octol/vim-cpp-enhanced-highlight', ft = { 'c', 'cpp' } },
+    { 'drmikehenry/vim-headerguard',      ft = { 'c', 'cpp' } },
+    { 'bfrg/vim-cpp-modern',              ft = { 'c', 'cpp' } },
+    { 'arakashic/chromatica.nvim',        ft = { 'c', 'cpp' } },
+    { 'rhysd/vim-clang-format',           ft = { 'c', 'cpp' } },
 
     -- SQL
     -- { "tami5/sql.nvim", rocks = { "sqlite", "luv" } }
@@ -169,7 +169,14 @@ require('lazy').setup({
     -- { 'kristijanhusak/vim-dadbod-ui' },
 
     -- writing
-    { 'junegunn/goyo.vim' },      -- Goyo, Goyo!
+    {
+        'junegunn/goyo.vim', -- Goyo, Goyo!
+        lazy = false,
+        config = function()
+            vim.g.goyo_width = '55%' -- Default width
+            -- vim.g.goyo_height = '90%' -- Default height
+        end
+    },
     { 'junegunn/limelight.vim' }, -- Limelight, Limelight!
     { 'rhysd/vim-grammarous' },
     -- https://github.com/airbornelamb/vim-academic
